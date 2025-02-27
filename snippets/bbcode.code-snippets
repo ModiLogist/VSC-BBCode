@@ -35,14 +35,54 @@
     "body": ["[img]${1:link}[/img]$0"],
     "description": "BB-Code Image"
   },
-  "BB Title": {
-    "prefix": "title",
+  "BB bold": {
+    "prefix": "b",
+    "body": ["[b]${1:title}[/b]$0"],
+    "description": "BB-Code Title"
+  },
+  "BB italic": {
+    "prefix": "i",
+    "body": ["[i]${1:text}[/i]$0"],
+    "description": "BB-Code Italic"
+  },
+  "BB underline": {
+    "prefix": "u",
+    "body": ["[u]${1:text}[/u]$0"],
+    "description": "BB-Code Underline"
+  },
+  "BB strike": {
+    "prefix": "s",
+    "body": ["[s]${1:text}[/s]$0"],
+    "description": "BB-Code Strike"
+  },
+  "BB size": {
+    "prefix": "size",
+    "body": ["[size=${1:1}]${2:text}[/size]$0"],
+    "description": "BB-Code Size"
+  },
+  "BB bold-size4": {
+    "prefix": "b4",
     "body": ["[size=4][b]${1:title}[/b][/size]$0"],
     "description": "BB-Code Title"
   },
-  "BB sub-Title": {
-    "prefix": "sub",
+  "BB bold-size3": {
+    "prefix": "b3",
     "body": ["[size=3][b]${1:title}[/b][/size]$0"],
+    "description": "BB-Code Title"
+  },
+  "BB bold-size2": {
+    "prefix": "b2",
+    "body": ["[size=2][b]${1:title}[/b][/size]$0"],
+    "description": "BB-Code Title"
+  },
+  "BB bold-size1": {
+    "prefix": "b1",
+    "body": ["[size=1][b]${1:title}[/b][/size]$0"],
+    "description": "BB-Code Title"
+  },
+  "BB bold-italic": {
+    "prefix": "bi",
+    "body": ["[b][i]${1:title}[/i][/b]$0"],
     "description": "BB-Code Title"
   }
 }
