@@ -3,16 +3,10 @@
   "name": "BBCode",
   "patterns": [{ "include": "#body" }],
   "repository": {
-    "image": {
-      "name": "image.bbcode",
-      "begin": "\\[img\\]",
-      "end": "\\[/img\\]",
-      "patterns": [{ "include": "#body" }]
-    },
     "body": {
       "patterns": [
-        { "include": "#url" },
         { "include": "#syn" },
+        { "include": "#url" },
         { "include": "#bullet" },
         { "include": "#bold" },
         { "include": "#italic" },
@@ -20,49 +14,49 @@
         { "include": "#underline" }
       ]
     },
-    "bold": {
-      "name": "bold.bbcode",
-      "begin": "\\[b\\]",
-      "end": "\\[/b\\]",
-      "patterns": [{ "include": "#syn" }]
-    },
-    "italic": {
-      "name": "italic.bbcode",
-      "begin": "\\[i\\]",
-      "end": "\\[/i\\]",
-      "patterns": [{ "include": "#syn" }]
-    },
-    "strikethrough": {
-      "name": "strikethrough.bbcode",
-      "begin": "\\[s\\]",
-      "end": "\\[/s\\]",
-      "patterns": [{ "include": "#syn" }]
-    },
-    "underline": {
-      "name": "underline.bbcode",
-      "begin": "\\[u\\]",
-      "end": "\\[/u\\]",
-      "patterns": [{ "include": "#syn" }]
-    },
     "syn": {
-      "name": "syn.bbcode",
+      "name": "entity.name.type.bbcode",
       "match": "\\[/?b\\]|\\[/?i\\]|\\[/?s\\]|\\[/?u\\]|/?url=?|\\[/?spoiler\\]|\\[/?list=?1?\\]|\\[/?quote\\]|\\[/?code\\]|\\[/?img\\]|\\[/?size=?.?\\]"
-    },
-    "bullet": {
-      "name": "bullet.bbcode",
-      "match": "\\[\\*\\]"
     },
     "url": {
       "patterns": [{ "include": "#url-title" }, { "include": "#url-link" }]
     },
     "url-link": {
-      "name": "url.link.bbcode",
+      "name": "string.quoted.double.bbcode",
       "match": "(?<=\\[url=)[^\\]]+"
     },
     "url-title": {
-      "name": "url.title.bbcode",
+      "name": "entity.name.function.bbcode",
       "begin": "(?<=\\[url=[^\\]]+\\])[^\\[]+",
       "end": "(?=\\[/url)?"
+    },
+    "bullet": {
+      "name": "variable.other.static.bbcode",
+      "match": "\\[\\*\\]"
+    },
+    "bold": {
+      "name": "markup.bold.bbcode",
+      "begin": "(?<=\\[b\\])",
+      "end": "(?=\\[/b\\])",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "italic": {
+      "name": "markup.italic.bbcode",
+      "begin": "(?<=\\[i\\])",
+      "end": "(?=\\[/i\\])",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "strikethrough": {
+      "name": "markup.strikethrough.bbcode",
+      "begin": "(?<=\\[s\\])",
+      "end": "(?=\\[/s\\])",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "underline": {
+      "name": "markup.underline.bbcode",
+      "begin": "(?<=\\[u\\])",
+      "end": "(?=\\[/u\\])",
+      "patterns": [{ "include": "#syn" }]
     }
   }
 }

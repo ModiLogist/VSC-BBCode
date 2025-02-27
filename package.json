@@ -2,7 +2,7 @@
   "name": "bbcode",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "vscode",
   "license": "MIT",
   "engines": {
@@ -15,13 +15,6 @@
     "Programming Languages"
   ],
   "contributes": {
-    "themes": [
-      {
-        "label": "BBCode Color Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bbcode-color-theme.json"
-      }
-    ],
     "languages": [
       {
         "id": "bbcode",
@@ -35,10 +28,7 @@
       {
         "language": "bbcode",
         "scopeName": "text.bbcode",
-        "path": "./syntaxes/bbcode.tmLanguage.json",
-        "embeddedLanguages": {
-          "text.bbcode": "bbcode"
-        }
+        "path": "./syntaxes/bbcode.tmLanguage.json"
       }
     ],
     "snippets": [
@@ -47,5 +37,9 @@
         "path": "./snippets/bbcode.code-snippets"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ModiLogist/VSC-BBCode"
   }
 }
