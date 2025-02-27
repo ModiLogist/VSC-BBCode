@@ -1,0 +1,60 @@
+{
+  "name": "BBCode Color Theme",
+  "type": "dark",
+  "colors": {
+    "editor.foreground": "#FFFFFF",
+    "editor.background": "#1E1E1E"
+  },
+  "tokenColors": [
+    {
+      "scope": "bold.bbcode",
+      "settings": {
+        "foreground": "#00BFFF", // Color for bold text
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "italic.bbcode",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "underline.bbcode",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "scope": "strikethrough.bbcode",
+      "settings": {
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "scope": "syn.bbcode",
+      "settings": {
+        "foreground": "#fffb00" // Color for tags
+      }
+    },
+    {
+      "scope": "bullet.bbcode",
+      "settings": {
+        "foreground": "#fca3ff" // Color for list items
+      }
+    },
+    {
+      "scope": "url.link.bbcode",
+      "settings": {
+        "foreground": "#CE9178" // Color for URLs
+      }
+    },
+    {
+      "scope": "url.title.bbcode",
+      "settings": {
+        "foreground": "#89ec92", // Color for URL titles
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}

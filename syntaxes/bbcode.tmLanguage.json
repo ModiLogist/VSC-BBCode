@@ -1,0 +1,68 @@
+{
+  "scopeName": "text.bbcode",
+  "name": "BBCode",
+  "patterns": [{ "include": "#body" }],
+  "repository": {
+    "image": {
+      "name": "image.bbcode",
+      "begin": "\\[img\\]",
+      "end": "\\[/img\\]",
+      "patterns": [{ "include": "#body" }]
+    },
+    "body": {
+      "patterns": [
+        { "include": "#url" },
+        { "include": "#syn" },
+        { "include": "#bullet" },
+        { "include": "#bold" },
+        { "include": "#italic" },
+        { "include": "#strikethrough" },
+        { "include": "#underline" }
+      ]
+    },
+    "bold": {
+      "name": "bold.bbcode",
+      "begin": "\\[b\\]",
+      "end": "\\[/b\\]",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "italic": {
+      "name": "italic.bbcode",
+      "begin": "\\[i\\]",
+      "end": "\\[/i\\]",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "strikethrough": {
+      "name": "strikethrough.bbcode",
+      "begin": "\\[s\\]",
+      "end": "\\[/s\\]",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "underline": {
+      "name": "underline.bbcode",
+      "begin": "\\[u\\]",
+      "end": "\\[/u\\]",
+      "patterns": [{ "include": "#syn" }]
+    },
+    "syn": {
+      "name": "syn.bbcode",
+      "match": "\\[/?b\\]|\\[/?i\\]|\\[/?s\\]|\\[/?u\\]|/?url=?|\\[/?spoiler\\]|\\[/?list=?1?\\]|\\[/?quote\\]|\\[/?code\\]|\\[/?img\\]|\\[/?size=?.?\\]"
+    },
+    "bullet": {
+      "name": "bullet.bbcode",
+      "match": "\\[\\*\\]"
+    },
+    "url": {
+      "patterns": [{ "include": "#url-title" }, { "include": "#url-link" }]
+    },
+    "url-link": {
+      "name": "url.link.bbcode",
+      "match": "(?<=\\[url=)[^\\]]+"
+    },
+    "url-title": {
+      "name": "url.title.bbcode",
+      "begin": "(?<=\\[url=[^\\]]+\\])[^\\[]+",
+      "end": "(?=\\[/url)?"
+    }
+  }
+}

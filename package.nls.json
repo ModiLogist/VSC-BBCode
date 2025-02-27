@@ -1,0 +1,4 @@
+{
+	"displayName": "BB-Code Language Support",
+	"description": "Provides syntax highlighting, bracket matching & snippets in .bbcode files."
+}

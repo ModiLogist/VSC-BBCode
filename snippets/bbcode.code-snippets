@@ -1,0 +1,48 @@
+{
+  "BB URL": {
+    "prefix": "url=",
+    "body": ["[url=${1:link}]${2:title}[/url]$0"],
+    "description": "BB-Code URL"
+  },
+  "BB List": {
+    "prefix": "list",
+    "body": [
+      "[list]",
+      "[*]${1:first input}",
+      "[*]${2:second input}",
+      "[*]${3:third input}",
+      "[/list]$0"
+    ],
+    "description": "BB-Code List"
+  },
+  "BB Spoiler": {
+    "prefix": "spoiler",
+    "body": ["[spoiler]${1:text}[/spoiler]$0"],
+    "description": "BB-Code Spoiler"
+  },
+  "BB Quote": {
+    "prefix": "quote",
+    "body": ["[quote]${1:text}[/quote]$0"],
+    "description": "BB-Code Quote"
+  },
+  "BB Code": {
+    "prefix": "code",
+    "body": ["[code]${1:text}[/code]$0"],
+    "description": "BB-Code Code"
+  },
+  "BB Image": {
+    "prefix": "img",
+    "body": ["[img]${1:link}[/img]$0"],
+    "description": "BB-Code Image"
+  },
+  "BB Title": {
+    "prefix": "title",
+    "body": ["[size=4][b]${1:title}[/b][/size]$0"],
+    "description": "BB-Code Title"
+  },
+  "BB sub-Title": {
+    "prefix": "sub",
+    "body": ["[size=3][b]${1:title}[/b][/size]$0"],
+    "description": "BB-Code Title"
+  }
+}

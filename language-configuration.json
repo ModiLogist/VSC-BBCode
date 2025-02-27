@@ -1,0 +1,46 @@
+{
+  "comments": {},
+  "brackets": [
+    ["{", "}"],
+    ["(", ")"],
+    ["[b]", "[/b]"],
+    ["[i]", "[/i]"],
+    ["[s]", "[/s]"],
+    ["[u]", "[/u]"],
+    ["[spoiler]", "[/spoiler]"],
+    ["[list]", "[/list]"],
+    ["[list=1]", "[/list]"],
+    ["[quote]", "[/quote]"],
+    ["[code]", "[/code]"],
+    ["[img]", "[/img]"],
+    ["[size=1]", "[/size]"],
+    ["[size=2]", "[/size]"],
+    ["[size=3]", "[/size]"],
+    ["[size=4]", "[/size]"],
+    ["[url=", "/url]"]
+  ],
+  "colorizedBracketPairs": [],
+  "autoClosingPairs": [
+    ["{", "}"],
+    ["(", ")"],
+    ["[b]", "[/b]"],
+    ["[i]", "[/i]"],
+    ["[s]", "[/s]"],
+    ["[u]", "[/u]"],
+    ["[spoiler]", "[/spoiler]"],
+    ["[list]", "[/list]"],
+    ["[quote]", "[/quote]"],
+    ["[code]", "[/code]"],
+    ["[img]", "[/img]"],
+    ["[size=1]", "[/size]"],
+    ["[size=2]", "[/size]"],
+    ["[size=3]", "[/size]"],
+    ["[size=4]", "[/size]"]
+  ],
+  "autoCloseBefore": "] \n\t",
+  "surroundingPairs": [
+    ["[", "]"],
+    ["{", "}"],
+    ["(", ")"]
+  ]
+}

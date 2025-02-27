@@ -1,0 +1,51 @@
+{
+  "name": "bbcode",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "0.0.1",
+  "publisher": "vscode",
+  "license": "MIT",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "scripts": {
+    "update-grammar": "node ./build/update-grammar.mjs"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "BBCode Color Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bbcode-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "bbcode",
+        "extensions": [
+          ".bbcode"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bbcode",
+        "scopeName": "text.bbcode",
+        "path": "./syntaxes/bbcode.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.bbcode": "bbcode"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "bbcode",
+        "path": "./snippets/bbcode.code-snippets"
+      }
+    ]
+  }
+}
