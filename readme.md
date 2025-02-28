@@ -137,11 +137,11 @@ The syntax highlighting makes it easier to read and edit BBCode by visually dist
 ## Installation
 
 To install the BBCode extension:
-
+0. Download the latest .vsix from release assets.
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
-3. Search for "BBCode".
-4. Click "Install" on the BBCode extension.
+3. Click on the "more" button and select install using VSIX.
+4. Find the file you downloaded and install.
 
 ## Usage
 
