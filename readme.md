@@ -160,3 +160,7 @@ If you would like to contribute to the BBCode extension, please visit the [GitHu
 ## License
 
 This extension is licensed under the MIT License.
+
+## Attributions
+
+Icon: <a href="https://www.flaticon.com/free-icons/notice" title="notice icons">Notice icons created by Freepik - Flaticon</a>

@@ -16,7 +16,7 @@
     },
     "syn": {
       "name": "entity.name.type.bbcode",
-      "match": "\\[/?b\\]|\\[/?i\\]|\\[/?s\\]|\\[/?u\\]|/?url=?|\\[/?spoiler\\]|\\[/?list=?1?\\]|\\[/?quote\\]|\\[/?code\\]|\\[/?img\\]|\\[/?size=?.?\\]"
+      "match": "\\[/?b\\]|\\[/?i\\]|\\[/?s\\]|\\[/?u\\]|/?url=?|\\[\\/?color(=#......)?\\]|\\[/?spoiler\\]|\\[/?list=?1?\\]|\\[/?quote\\]|\\[/?code\\]|\\[/?img\\]|\\[/?size=?.?\\]"
     },
     "url": {
       "patterns": [{ "include": "#url-title" }, { "include": "#url-link" }]
